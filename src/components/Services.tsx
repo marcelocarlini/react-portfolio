@@ -26,8 +26,19 @@ export function Services() {
           <span className="font-handwriting text-4xl">Serviços</span>
         </h2>
         <p className="text-sm text-gray-600">
-          Posso atender uma gama completa de serviços, do front-end ao back-end
-          com banco de dados e sistemas.
+          <p>
+            Estou plenamente comprometido em expandir constantemente minhas
+            habilidades e ansioso para abraçar os desafios do desenvolvimento de
+            software com paixão, determinação e um desejo insaciável de
+            aprendizado.
+          </p>
+          <br></br>
+          <p>
+            Seja qual for o seu projeto, estou pronto para colaborar e
+            transformar suas visões em produtos digitais bem-sucedidos. Vamos
+            trabalhar juntos para alcançar seus objetivos de desenvolvimento de
+            software
+          </p>
         </p>
       </div>
       <div className="mt-6 flex flex-col gap-2 md:flex-row">

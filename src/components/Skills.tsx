@@ -3,10 +3,13 @@ import { HiAcademicCap, HiCodeBracketSquare } from "react-icons/hi2";
 export function Skills() {
   const educations = [
     {
-      name: "Curso de Desenvolvimento Web Full Stack | Dev Samurai",
+      name: "Curso de Desenvolvimento Web | React JS + API OpenAI | Udemy",
     },
     {
-      name: "Curso de Desenvolvimento Mobile | Dev Samurai",
+      name: "Curso de Desenvolvimento Web | PHP + Laravel + MySQL | Udemy",
+    },
+    {
+      name: "Curso de Desenvolvimento Web | NodeJS + React + React Native + TypeScript | Udemy",
     },
   ];
 
@@ -14,22 +17,18 @@ export function Skills() {
     {
       name: "HTML5/CSS3",
       icon: "images/html.svg",
-      level: 95,
     },
     {
       name: "JavaScript",
       icon: "images/javascript.svg",
-      level: 90,
     },
     {
       name: "React.js",
       icon: "images/react.svg",
-      level: 85,
     },
     {
       name: "Node.js",
       icon: "images/nodejs.svg",
-      level: 65,
     },
   ];
 
@@ -47,7 +46,7 @@ export function Skills() {
           </h2>
           <p className="relative text-sm text-gray-700">
             Front-end Developer | React.js | React Native | Node.js | TypeScript
-            | JavaScript
+            | JavaScript | PHP | Laravel | MySql
           </p>
           <div className="absolute left-1/2 top-3 z-0 h-10 w-10 rounded-lg bg-blue-400/10" />
         </div>
@@ -89,12 +88,6 @@ export function Skills() {
                   </div>
                   <div className="w-full flex-grow">
                     <h4 className="font-headlin text-gray-900">{skill.name}</h4>
-                    <div className="h-2.5 w-full rounded-full bg-white">
-                      <div
-                        className="h-2.5 rounded-full bg-blue-600"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
                   </div>
                 </div>
               ))}

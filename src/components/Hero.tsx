@@ -1,6 +1,13 @@
 import { HiDownload } from "react-icons/hi";
-
 export function Hero() {
+  const handleDownload = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "./src/img/curriculo.pdf";
+    downloadLink.download = "curriculo.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
   return (
     <section className="bg-gradient-to-tr from-black to-gray-900 text-white">
       <div className="container mx-auto max-w-4x1 p-2 py-12 flex flex-col md:flex-row">
@@ -26,13 +33,10 @@ export function Hero() {
           </p>
 
           <div className="flex items-center justify-center md:justify-start gap-2">
-            <a href="#" className="underline font-bold text-white ">
-              Fale comigo
-            </a>
-            <span className="italic text-gray-500">ou</span>
             <a
               href="#"
               className="button text-gray-600 hover:text-gray-900 flex items-center gap-2"
+              onClick={handleDownload}
             >
               <HiDownload />
               Baixe meu CV
